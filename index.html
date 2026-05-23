@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURUM | Luxury Lifestyle & Fashion</title>
+    <link rel="icon" href="./images/logos.png">
+    <link rel="stylesheet" href="luxury-shop.css">
+    <link rel="stylesheet" href="luxury-cart-drawer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader-content">
+            <h1 class="logo-text">AURUM</h1>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="luxury-shop.html" class="nav-link active">Home</a></li>
+                    <li><a href="luxury-boutique.html" class="nav-link">Boutique</a></li>
+                    <li><a href="luxury-about.html" class="nav-link">Heritage</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-logo">
+                <a href="luxury-shop.html">AURUM</a>
+            </div>
+
+            <div class="nav-icons">
+                <a href="#" class="nav-icon" id="search-trigger"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="nav-icon" id="user-trigger"><i class="fa-regular fa-user"></i></a>
+                <a href="#" class="nav-icon cart-trigger">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <span class="hero-subtitle" data-aos="fade-up">New Collection 2026</span>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">Timeless Elegance<br>Defined</h1>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="400">Experience the pinnacle of craftsmanship and sophisticated design. Curated for those who appreciate the finer things in life.</p>
+                <div class="hero-btns" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#featured" class="btn btn-gold">Explore Collection</a>
+                    <a href="#" class="btn btn-outline">View Film</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section class="collections container section-padding">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">The Seasonal Edit</h2>
+                <p class="section-subtitle">Discover our masterfully crafted pieces for the modern connoisseur.</p>
+            </div>
+            
+            <div class="collections-grid">
+                <div class="collection-card" data-aos="fade-up" data-category="footwear">
+                    <div class="card-img">
+                        <img src="./images/shoes.avif" alt="Shoes">
+                    </div>
+                    <div class="card-content">
+                        <h3>Footwear</h3>
+                        <a href="#" class="link-arrow">Discover <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                <div class="collection-card" data-aos="fade-up" data-aos-delay="200" data-category="timepieces">
+                    <div class="card-img">
+                        <img src="./images/timepieces.avif" alt="Timepieces">
+                    </div>
+                    <div class="card-content">
+                        <h3>Timepieces</h3>
+                        <a href="#" class="link-arrow">Discover <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                <div class="collection-card" data-aos="fade-up" data-aos-delay="400" data-category="accessories">
+                    <div class="card-img">
+                        <img src="./images/accessories.avif" alt="Accessories">
+                    </div>
+                    <div class="card-content">
+                        <h3>Accessories</h3>
+                        <a href="#" class="link-arrow">Discover <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured" class="products bg-light section-padding">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Essential Luxuries</h2>
+                    <div class="filter-btns">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">New</button>
+                        <button class="filter-btn">Exclusive</button>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-item" data-aos="fade-up">
+                        <div class="product-img-wrapper">
+                            <img src="./images/female-watch.avif" alt="Product 1" class="main-img">
+                            <img src="./images/boy-watch.avif" alt="Product 1 Hover" class="hover-img">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                                <button class="action-btn add-to-cart">Add to Bag</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-cat">Timepieces</span>
+                            <h3 class="product-name">Chronograph Classic Gold</h3>
+                            <span class="product-price">$2,450</span>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-img-wrapper">
+                            <img src="./images/shoulder-bag.webp" alt="Product 1" class="main-img">
+                            <img src="./images/pink-shoulder-bag.jpg" alt="Product 1 Hover" class="hover-img">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                                <button class="action-btn add-to-cart">Add to Bag</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-cat">Accessories</span>
+                            <h3 class="product-name">Bespoke Leather Tote</h3>
+                            <span class="product-price">$1,890</span>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-img-wrapper">
+                            <img src="./images/wireless-headphone.jpg" alt="Product 2" class="main-img">
+                            <img src="./images/headphones.avif" alt="Product 3" class="hover-img">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                                <button class="action-btn add-to-cart">Add to Bag</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-cat">Electronics</span>
+                            <h3 class="product-name">Sovereign Studio Headphones</h3>
+                            <span class="product-price">$590</span>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="product-img-wrapper">
+                            <img src="./images/eyeglasses.avif" alt="Product 4" class="main-img">
+                            <img src="./images/golden-glasses.webp" alt="Product 4 Hover" class="hover-img">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                                <button class="action-btn add-to-cart">Add to Bag</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-cat">Accessories</span>
+                            <h3 class="product-name">Midnight Aviator Frames</h3>
+                            <span class="product-price">$420</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-50" data-aos="fade-up">
+                    <a href="#" class="btn btn-dark">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo">
+            <div class="promo-grid">
+                <div class="promo-text" data-aos="fade-right">
+                    <div class="promo-inner">
+                        <h2 class="promo-title">The Art of Craft</h2>
+                        <p>Each Aurum piece is handcrafted by master artisans using materials sourced from the most prestigious regions globally. We don't just create products; we create legacies.</p>
+                        <a href="#" class="link-underline">Read Our Story</a>
+                    </div>
+                </div>
+                <div class="promo-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=80" alt="Craftsmanship">
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter section-padding text-center">
+            <div class="container" data-aos="zoom-in">
+                <h2 class="newsletter-title">Join The Inner Circle</h2>
+                <p class="newsletter-desc">Subscribe to receive exclusive invitations to private events, early access to new collections, and curated luxury insights.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+        <div class="cart-overlay"></div>
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Bag</h2>
+            <button class="cart-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Items added via JS -->
+            <div class="empty-cart-msg">Your bag is currently empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Subtotal</span>
+                <span id="cart-total-amount">$0</span>
+            </div>
+            <a href="#" class="btn btn-dark checkout-btn">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="search-modal">
+        <div class="modal-container">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="search-modal-content">
+                <h2>Search Our Collections</h2>
+                <div class="search-input-group">
+                    <input type="text" id="global-search-input" placeholder="What are you looking for?">
+                    <button class="btn-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div id="search-results-preview" style="margin-top: 30px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- User  -->
+    <div class="modal-overlay" id="user-modal">
+        <div class="modal-container">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="user-modal-content" id="user-modal-main">
+                <!-- Login View -->
+                <div id="login-view">
+                    <div class="auth-tabs">
+                        <button class="auth-tab active" onclick="switchAuthTab('login')">Login</button>
+                        <button class="auth-tab" onclick="switchAuthTab('register')">Register</button>
+                    </div>
+                    <form class="auth-form" id="login-form">
+                        <div class="form-group">
+                            <input type="email" id="login-email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="login-password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Sign In</button>
+                        <a href="#" style="text-align: center; font-size: 0.8rem; margin-top: 10px;">Forgot Password?</a>
+                    </form>
+                </div>
+
+                <div id="profile-view" style="display: none;">
+                    <h2 style="margin-bottom: 10px;">Welcome Back</h2>
+                    <p id="user-display-email" style="text-align: center; color: var(--gold); margin-bottom: 30px;"></p>
+                    
+                    <div class="profile-actions" style="display: flex; flex-direction: column; gap: 15px;">
+                        <button class="btn btn-outline" style="color: var(--black); border-color: #ddd;" onclick="showChangePassword()">Change Password</button>
+                        <button class="btn btn-dark" id="logout-btn">Log Out</button>
+                    </div>
+                </div>
+
+                <div id="password-view" style="display: none;">
+                    <h2 style="margin-bottom: 30px;">Change Password</h2>
+                    <form class="auth-form" id="change-pass-form">
+                        <div class="form-group">
+                            <input type="password" id="new-password" placeholder="New Password" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="confirm-password" placeholder="Confirm New Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Update Password</button>
+                        <button type="button" class="btn btn-outline" style="color: var(--black); border-color: #ddd; margin-top: 10px;" onclick="showProfile()">Back to Profile</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2 class="logo-text">AURUM</h2>
+                <p>Redefining luxury since 1994. Experience excellence in every detail.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Collections</h4>
+                <ul>
+                    <li><a href="luxury-boutique.html">Men's Boutique</a></li>
+                    <li><a href="luxury-boutique.html">Women's Boutique</a></li>
+                    <li><a href="luxury-boutique.html">New Arrivals</a></li>
+                    <li><a href="luxury-boutique.html">Limited Editions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>The House</h4>
+                <ul>
+                    <li><a href="luxury-about.html">Our Story</a></li>
+                    <li><a href="luxury-about.html">Artisanship</a></li>
+                    <li><a href="luxury-about.html">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Client Care</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Bespoke Services</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 AURUM LUXURY. ALL RIGHTS RESERVED.</p>
+            <div class="payment-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-apple-pay"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="luxury-shop.js"></script>
+</body>
+</html>
