@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique | AURUM Luxury Collections</title>
+    <link rel="icon" href="./images/logos.png">
+    <link rel="stylesheet" href="luxury-shop.css">
+    <link rel="stylesheet" href="luxury-cart-drawer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader-content">
+            <h1 class="logo-text">AURUM</h1>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <header class="navbar scrolled">  
+        <div class="container nav-container">
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="luxury-boutique.html" class="nav-link active">Boutique</a></li>
+                    <li><a href="luxury-about.html" class="nav-link">Heritage</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-logo">
+                <a href="index.html">AURUM</a>
+            </div>
+
+            <div class="nav-icons">
+                <a href="#" class="nav-icon" id="search-trigger"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="nav-icon" id="user-trigger"><i class="fa-regular fa-user"></i></a>
+                <a href="#" class="nav-icon cart-trigger">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header section-padding bg-light">
+            <div class="container text-center">
+                <h1 class="section-title" data-aos="fade-up">The Boutique</h1>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Exquisite pieces curated for the modern connoisseur.</p>
+            </div>
+        </section>
+
+        <section class="boutique-products container section-padding">
+            <div class="filter-bar" data-aos="fade-up">
+                <div class="filter-btns">
+                    <button class="filter-btn active">All Pieces</button>
+                    <button class="filter-btn">Timepieces</button>
+                    <button class="filter-btn">Leather Goods</button>
+                    <button class="filter-btn">Accessories</button>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-item" data-aos="fade-up">
+                    <div class="product-img-wrapper">
+                        <img src="./images/female-watch.avif" alt="Product 1">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="action-btn add-to-cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Timepieces</span>
+                        <h3 class="product-name">Chronograph Classic Gold</h3>
+                        <span class="product-price">$2,450</span>
+                    </div>
+                </div>
+
+                <div class="product-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-img-wrapper">
+                        <img src="./images/pink-shoulder-bag.jpg" alt="Product 2">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="action-btn add-to-cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Leather Goods</span>
+                        <h3 class="product-name">Bespoke Leather Tote</h3>
+                        <span class="product-price">$1,890</span>
+                    </div>
+                </div>
+
+                <div class="product-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-img-wrapper">
+                        <img src="./images/headphones.avif" alt="Product 3">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="action-btn add-to-cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Accessories</span>
+                        <h3 class="product-name">Sovereign Studio Headphones</h3>
+                        <span class="product-price">$590</span>
+                    </div>
+                </div>
+
+                <div class="product-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-img-wrapper">
+                        <img src="./images/eyeglasses.avif" alt="Product 4">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="action-btn add-to-cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Accessories</span>
+                        <h3 class="product-name">Midnight Aviator Frames</h3>
+                        <span class="product-price">$420</span>
+                    </div>
+                </div>
+
+                <div class="product-item" data-aos="fade-up">
+                    <div class="product-img-wrapper">
+                        <img src="./images/accessories.avif" alt="Product 5">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="action-btn add-to-cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Timepieces</span>
+                        <h3 class="product-name">Lunar Phase Silver</h3>
+                        <span class="product-price">$3,100</span>
+                    </div>
+                </div>
+
+                <div class="product-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-img-wrapper">
+                        <img src="./images/shoes.avif" alt="Product 6">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="action-btn add-to-cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Footwear</span>
+                        <h3 class="product-name">Imperial Dress Shoes</h3>
+                        <span class="product-price">$1,200</span>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-img-wrapper">
+                        <img src="./images/shoes.avif" alt="Product 6">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="action-btn add-to-cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Footwear</span>
+                        <h3 class="product-name">Imperial Dress Shoes</h3>
+                        <span class="product-price">$1,200</span>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-img-wrapper">
+                        <img src="./images/shoes.avif" alt="Product 6">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="action-btn add-to-cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Footwear</span>
+                        <h3 class="product-name">Imperial Dress Shoes</h3>
+                        <span class="product-price">$1,200</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2 class="logo-text">AURUM</h2>
+                <p>Redefining luxury since 1994. Experience excellence in every detail.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Collections</h4>
+                <ul>
+                    <li><a href="#">Men's Boutique</a></li>
+                    <li><a href="#">Women's Boutique</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Limited Editions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>The House</h4>
+                <ul>
+                    <li><a href="luxury-about.html">Our Story</a></li>
+                    <li><a href="#">Artisanship</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Client Care</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Bespoke Services</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 AURUM LUXURY. ALL RIGHTS RESERVED.</p>
+            <div class="payment-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-apple-pay"></i>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-overlay"></div>
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Bag</h2>
+            <button class="cart-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <div class="empty-cart-msg">Your bag is currently empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Subtotal</span>
+                <span id="cart-total-amount">$0</span>
+            </div>
+            <a href="#" class="btn btn-dark checkout-btn">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="user-modal">
+        <div class="modal-container">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="user-modal-content" id="user-modal-main">
+                <div id="login-view">
+                    <div class="auth-tabs">
+                        <button class="auth-tab active" onclick="switchAuthTab('login')">Login</button>
+                        <button class="auth-tab" onclick="switchAuthTab('register')">Register</button>
+                    </div>
+                    <form class="auth-form" id="login-form">
+                        <div class="form-group">
+                            <input type="email" id="login-email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="login-password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Sign In</button>
+                        <a href="#" style="text-align: center; font-size: 0.8rem; margin-top: 10px;">Forgot Password?</a>
+                    </form>
+                </div>
+
+                <div id="profile-view" style="display: none;">
+                    <h2 style="margin-bottom: 10px;">Welcome Back</h2>
+                    <p id="user-display-email" style="text-align: center; color: var(--gold); margin-bottom: 30px;"></p>
+                    
+                    <div class="profile-actions" style="display: flex; flex-direction: column; gap: 15px;">
+                        <button class="btn btn-outline" style="color: var(--black); border-color: #ddd;" onclick="showChangePassword()">Change Password</button>
+                        <button class="btn btn-dark" id="logout-btn">Log Out</button>
+                    </div>
+                </div>
+
+                <div id="password-view" style="display: none;">
+                    <h2 style="margin-bottom: 30px;">Change Password</h2>
+                    <form class="auth-form" id="change-pass-form">
+                        <div class="form-group">
+                            <input type="password" id="new-password" placeholder="New Password" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="confirm-password" placeholder="Confirm New Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Update Password</button>
+                        <button type="button" class="btn btn-outline" style="color: var(--black); border-color: #ddd; margin-top: 10px;" onclick="showProfile()">Back to Profile</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="search-modal">
+        <div class="modal-container">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="search-modal-content">
+                <h2>Search Our Collections</h2>
+                <div class="search-input-group">
+                    <input type="text" id="global-search-input" placeholder="What are you looking for?">
+                    <button class="btn-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div id="search-results-preview" style="margin-top: 30px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="luxury-shop.js"></script>
+</body>
+</html>
