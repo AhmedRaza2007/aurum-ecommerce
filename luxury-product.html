@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | AURUM Luxury</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="icon" href="./images/logos.png">
+    <link rel="stylesheet" href="luxury-shop.css">
+    <link rel="stylesheet" href="luxury-cart-drawer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader-content">
+            <h1 class="logo-text">AURUM</h1>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <header class="navbar scrolled">
+        <div class="container nav-container">
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="luxury-boutique.html" class="nav-link">Boutique</a></li>
+                    <li><a href="luxury-about.html" class="nav-link">Heritage</a></li>
+                </ul>
+            </nav>
+            <div class="nav-logo">
+                <a href="index.html">AURUM</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="nav-icon" id="search-trigger"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="nav-icon" id="user-trigger"><i class="fa-regular fa-user"></i></a>
+                <a href="#" class="nav-icon cart-trigger">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <a href="javascript:history.back()" class="link-arrow" style="margin-bottom: 30px;"><i class="fa-solid fa-arrow-left-long"></i> Back to Collections</a>
+        
+        <div class="product-detail-grid">
+            <div class="detail-img" data-aos="fade-right">
+                <img id="p-image" src="" alt="Product Image">
+            </div>
+            <div class="detail-info" data-aos="fade-left">
+                <span class="detail-cat" id="p-cat">Category</span>
+                <h1 class="detail-name" id="p-name">Product Name</h1>
+                <span class="detail-price" id="p-price">$0</span>
+                
+                <p class="detail-desc">
+                    Experience unparalleled luxury with this masterfully crafted piece. Hand-selected materials and exquisite attention to detail define the AURUM standard. This item embodies our commitment to timeless elegance and superior functionality.
+                </p>
+
+                <div class="detail-options">
+                    <span class="option-label">Selection</span>
+                    <div style="display: flex; gap: 10px;">
+                        <button class="filter-btn active">Standard Edition</button>
+                        <button class="filter-btn">Limited Gold</button>
+                    </div>
+                </div>
+
+                <div class="qty-selector">
+                    <span class="option-label" style="margin-bottom: 0;">Quantity</span>
+                    <div class="qty-input">
+                        <button id="qty-dec">-</button>
+                        <input type="text" id="qty-val" value="1" readonly>
+                        <button id="qty-inc">+</button>
+                    </div>
+                </div>
+
+                <div class="purchase-btns">
+                    <button class="btn btn-dark" id="add-to-cart-detail">Add to Bag</button>
+                    <button class="btn btn-gold">Buy Now</button>
+                </div>
+                
+                <div style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.8rem; color: #999;">
+                    <p><i class="fa-solid fa-truck-fast"></i> Complimentary Worldwide Shipping</p>
+                    <p style="margin-top: 10px;"><i class="fa-solid fa-shield-halved"></i> 2-Year International Warranty</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2 class="logo-text">AURUM</h2>
+                <p>Redefining luxury since 1994. Experience excellence in every detail.</p>
+            </div>
+            <div class="footer-links">
+                <h4>House</h4>
+                <ul>
+                    <li><a href="luxury-about.html">Our Story</a></li>
+                    <li><a href="#">Artisanship</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-overlay"></div>
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Bag</h2>
+            <button class="cart-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <div class="empty-cart-msg">Your bag is currently empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Subtotal</span>
+                <span id="cart-total-amount">$0</span>
+            </div>
+            <a href="#" class="btn btn-dark checkout-btn">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="user-modal">
+        <div class="modal-container">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="user-modal-content" id="user-modal-main">
+                <div id="login-view">
+                    <div class="auth-tabs">
+                        <button class="auth-tab active" onclick="switchAuthTab('login')">Login</button>
+                        <button class="auth-tab" onclick="switchAuthTab('register')">Register</button>
+                    </div>
+                    <form class="auth-form" id="login-form">
+                        <div class="form-group"><input type="email" id="login-email" placeholder="Email Address" required></div>
+                        <div class="form-group"><input type="password" id="login-password" placeholder="Password" required></div>
+                        <button type="submit" class="btn btn-dark">Sign In</button>
+                    </form>
+                </div>
+                <div id="profile-view" style="display: none;">
+                    <h2>Welcome Back</h2>
+                    <p id="user-display-email" style="text-align: center; color: var(--gold); margin-bottom: 30px;"></p>
+                    <div class="profile-actions" style="display: flex; flex-direction: column; gap: 15px;">
+                        <button class="btn btn-outline" style="color: var(--black); border-color: #ddd;" onclick="showChangePassword()">Change Password</button>
+                        <button class="btn btn-dark" id="logout-btn">Log Out</button>
+                    </div>
+                </div>
+                <div id="password-view" style="display: none;">
+                    <h2>Change Password</h2>
+                    <form class="auth-form" id="change-pass-form">
+                        <div class="form-group"><input type="password" id="new-password" placeholder="New Password" required></div>
+                        <div class="form-group"><input type="password" id="confirm-password" placeholder="Confirm New Password" required></div>
+                        <button type="submit" class="btn btn-dark">Update Password</button>
+                        <button type="button" class="btn btn-outline" style="color: var(--black); border-color: #ddd; margin-top: 10px;" onclick="showProfile()">Back</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="search-modal">
+        <div class="modal-container">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="search-modal-content">
+                <h2>Search Our Collections</h2>
+                <div class="search-input-group">
+                    <input type="text" id="global-search-input" placeholder="What are you looking for?">
+                    <button class="btn-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="luxury-shop.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
