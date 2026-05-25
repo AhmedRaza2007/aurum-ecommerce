@@ -165,6 +165,14 @@ git push -u origin main
 
 ---
 
+---
+
+# 🤖 Development Assistance
+
+This project was developed with the help of AI-assisted tools for idea generation, UI improvement suggestions, and workflow optimization.
+
+---
+
 # 📌 Future Improvements
 
 - Add JavaScript functionality
