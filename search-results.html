@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details | AURUM Luxury</title>
-    <link rel="stylesheet" href="product.css">
+    <title>Search Results | AURUM Luxury</title>
     <link rel="icon" href="./images/logos.png">
     <link rel="stylesheet" href="luxury-shop.css">
     <link rel="stylesheet" href="luxury-cart-drawer.css">
@@ -22,78 +21,55 @@
 
     <header class="navbar scrolled">
         <div class="container nav-container">
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-            </div>
+            <div class="menu-toggle" id="mobile-menu"><span></span><span></span></div>
             <nav class="nav-menu">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="luxury-boutique.html" class="nav-link">Boutique</a></li>
-                    <li><a href="luxury-about.html" class="nav-link">Heritage</a></li>
+                    <li><a href="index.html" class="nav-link">Heritage</a></li>
                 </ul>
             </nav>
-            <div class="nav-logo">
-                <a href="index.html">AURUM</a>
-            </div>
+            <div class="nav-logo"><a href="index.html">AURUM</a></div>
             <div class="nav-icons">
                 <a href="#" class="nav-icon" id="search-trigger"><i class="fa-solid fa-magnifying-glass"></i></a>
                 <a href="#" class="nav-icon" id="user-trigger"><i class="fa-regular fa-user"></i></a>
-                <a href="#" class="nav-icon cart-trigger">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <span class="cart-count">0</span>
-                </a>
+                <a href="#" class="nav-icon cart-trigger"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></a>
             </div>
         </div>
     </header>
 
     <main class="container section-padding">
-        <a href="javascript:history.back()" class="link-arrow" style="margin-bottom: 30px;"><i class="fa-solid fa-arrow-left-long"></i> Back to Collections</a>
+        <div class="section-header" data-aos="fade-up">
+            <h1 class="section-title">Search Results</h1>
+            <p class="section-subtitle" id="search-query-display">Showing results for "..."</p>
+        </div>
+
+        <div class="products-grid" id="search-results-grid">
+        </div>
         
-        <div class="product-detail-grid">
-            <div class="detail-img" data-aos="fade-right">
-                <img id="p-image" src="./images/timepieces.avif" alt="Product Image">
-            </div>
-            <div class="detail-info" data-aos="fade-left">
-                <span class="detail-cat" id="p-cat">Category</span>
-                <h1 class="detail-name" id="p-name">Product Name</h1>
-                <span class="detail-price" id="p-price">$0</span>
-                
-                <p class="detail-desc">
-                    Experience unparalleled luxury with this masterfully crafted piece. Hand-selected materials and exquisite attention to detail define the AURUM standard. This item embodies our commitment to timeless elegance and superior functionality.
-                </p>
-
-                <div class="detail-options">
-                    <span class="option-label">Selection</span>
-                    <div style="display: flex; gap: 10px;">
-                        <button class="filter-btn active">Standard Edition</button>
-                        <button class="filter-btn">Limited Gold</button>
-                    </div>
-                </div>
-
-                <div class="qty-selector">
-                    <span class="option-label" style="margin-bottom: 0;">Quantity</span>
-                    <div class="qty-input">
-                        <button id="qty-dec">-</button>
-                        <input type="text" id="qty-val" value="1" readonly>
-                        <button id="qty-inc">+</button>
-                    </div>
-                </div>
-
-                <div class="purchase-btns">
-                    <button class="btn btn-dark" id="add-to-cart-detail">Add to Bag</button>
-                    <button class="btn btn-gold">Buy Now</button>
-                </div>
-                
-                <div style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.8rem; color: #999;">
-                    <p><i class="fa-solid fa-truck-fast"></i> Complimentary Worldwide Shipping</p>
-                    <p style="margin-top: 10px;"><i class="fa-solid fa-shield-halved"></i> 2-Year International Warranty</p>
-                </div>
-            </div>
+        <div id="no-results" class="text-center" style="display: none; padding: 100px 0;">
+            <h3 style="font-family: 'Montserrat', sans-serif; color: #999;">No exquisite pieces found matching your request.</h3>
+            <a href="luxury-boutique.html" class="btn btn-gold mt-50">Browse Boutique</a>
         </div>
     </main>
 
-        <div class="cart-overlay"></div>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2 class="logo-text">AURUM</h2>
+                <p>Redefining luxury since 1994. Experience excellence in every detail.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Collections</h4>
+                <ul>
+                    <li><a href="luxury-boutique.html">Boutique</a></li>
+                    <li><a href="index.html">Our Story</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-overlay"></div>
     <div class="cart-drawer">
         <div class="cart-header">
             <h2>Your Bag</h2>
@@ -159,61 +135,21 @@
             </div>
         </div>
     </div>
-        <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <h2 class="logo-text">AURUM</h2>
-                <p>Redefining luxury since 1994. Experience excellence in every detail.</p>
-                <div class="footer-social">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                </div>
-            </div>
-            
-            <div class="footer-links">
-                <h4>Collections</h4>
-                <ul>
-                    <li><a href="luxury-boutique.html">Men's Boutique</a></li>
-                    <li><a href="luxury-boutique.html">Women's Boutique</a></li>
-                    <li><a href="luxury-boutique.html">New Arrivals</a></li>
-                    <li><a href="luxury-boutique.html">Limited Editions</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links">
-                <h4>The House</h4>
-                <ul>
-                    <li><a href="luxury-about.html">Our Story</a></li>
-                    <li><a href="luxury-about.html">Artisanship</a></li>
-                    <li><a href="luxury-about.html">Sustainability</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links">
-                <h4>Client Care</h4>
-                <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Bespoke Services</a></li>
-                    <li><a href="#">Shipping & Returns</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom container">
-            <p>&copy; 2026 AURUM LUXURY. ALL RIGHTS RESERVED.</p>
-            <div class="payment-icons">
-                <i class="fa-brands fa-cc-visa"></i>
-                <i class="fa-brands fa-cc-mastercard"></i>
-                <i class="fa-brands fa-cc-apple-pay"></i>
-            </div>
-        </div>
-    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="luxury-shop.js"></script>
-    <script src="product.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const query = params.get('q');
+            if (query) {
+                document.getElementById('search-query-display').textContent = `Showing results for "${query}"`;
+                setTimeout(() => {
+                    const resultsGrid = document.getElementById('search-results-grid');
+                    window.location.href = `luxury-boutique.html?category=${encodeURIComponent(query)}`;
+                }, 500);
+            }
+        });
+    </script>
 </body>
 </html>
