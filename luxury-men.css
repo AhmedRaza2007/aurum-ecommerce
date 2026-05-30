@@ -1,0 +1,76 @@
+       .mens-hero {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .mens-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2));
+        }
+        .hero-floating-text {
+            position: relative;
+            z-index: 1;
+            color: white;
+            max-width: 800px;
+            padding: 20px 0;
+        }
+        .product-item.mens-exclusive {
+            border: 1px solid #f0f0f0;
+            padding: 15px;
+            transition: var(--transition);
+        }
+        .product-item.mens-exclusive:hover {
+            border-color: var(--gold);
+            transform: translateY(-10px);
+        }
+        .material-tag {
+            font-size: 0.7rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .consultation-banner {
+            background: var(--black);
+            color: var(--white);
+            padding: 60px 0;
+            margin: 80px 0;
+            text-align: center;
+        }
+        .consultation-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .consultation-content p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            opacity: 0.8;
+        }
+        .size-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .size-option {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .size-option:hover, .size-option.active {
+            background: var(--black);
+            color: var(--white);
+            border-color: var(--black);
+        }
