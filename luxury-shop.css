@@ -277,7 +277,7 @@ img {
     }
 }
 .hero {
-    height: 100vh;
+    height: 105vh;
     background: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -751,6 +751,7 @@ img {
     align-items: center;
     gap: 15px;
     opacity: 0.7;
+    display: none;
 }
 
 .hero-scroll span {
@@ -901,6 +902,13 @@ img {
     border: 1px solid #ddd;
     font-family: inherit;
 }
+.btn-icon {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--black);
+}
 
 .form-group input:focus {
     outline: none;
@@ -911,6 +919,8 @@ img {
     .modal-container {
         padding: 40px 20px;
     }
+    .btn-gold, .btn-outline, .btn-dark {
+        padding:22px 20px;}
 }
 @media (max-width: 1200px) {
     .hero-title { font-size: 4rem; }
@@ -918,11 +928,23 @@ img {
 }
 
 @media (max-width: 992px) {
-    .container { padding: 0 30px; }
+    .container { padding: 30px 30px; }
     .collections-grid { grid-template-columns: 1fr; }
     .collection-card { height: 400px; }
     .promo-grid { grid-template-columns: 1fr; }
     .promo-image { order: -1; min-height: 400px; }
+    .hero-scroll {
+        position: absolute;
+        left: 53%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        opacity: 0.7;
+        bottom: -2px;
+    }
+    
 }
 
 @media (max-width: 768px) {
